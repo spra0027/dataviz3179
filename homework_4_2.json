@@ -37,22 +37,21 @@
   
     "mark": "circle",
     "encoding": {
-      "color": {"field": "Extent of GDP_Capita", "type": "quantitative",
+      "color": {"field": "GDP_Capita", "type": "quantitative",
         "scale": {
             "range": ["red", "green"]
         }
       },
       "x": {"field": "Score", "type": "quantitative"},
-      "y": {"field": "Extent of GDP_Capita", "type": "quantitative"},
+      "y": {"field": "GDP_Capita", "type": "quantitative", "title": "Extent of GDP/Capita"},
       
       "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
           {"field": "Score", "type": "quantitative"},
-          {"field": "Extent of GDP_Capita", "type": "quantitative"}
+          {"field": "GDP_Capita", "type": "quantitative", "title": "Extent of GDP/Capita"}
       ]
     },
     "config": {}
     
   }
-  
   
