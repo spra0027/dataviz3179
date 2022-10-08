@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "title": "Happiness Score vs GDP_Capita 2015 - 2019",
+      "title": "Happiness Score vs Extent of contribution of GDP_Capita 2015 - 2019",
       "width": 500,
     "height": 500,
     "data": {"url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/all_years.csv"
@@ -37,18 +37,18 @@
   
     "mark": "circle",
     "encoding": {
-      "color": {"field": "GDP_Capita", "type": "quantitative",
+      "color": {"field": "Extent of GDP_Capita", "type": "quantitative",
         "scale": {
             "range": ["red", "green"]
         }
       },
       "x": {"field": "Score", "type": "quantitative"},
-      "y": {"field": "GDP_Capita", "type": "quantitative"},
+      "y": {"field": "Extent of GDP_Capita", "type": "quantitative"},
       
       "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
           {"field": "Score", "type": "quantitative"},
-          {"field": "GDP_Capita", "type": "quantitative"}
+          {"field": "Extent of GDP_Capita", "type": "quantitative"}
       ]
     },
     "config": {}
